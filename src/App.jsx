@@ -3,6 +3,12 @@ import './App.css';
 import logo from './assets/logo.png';
 import bentoTonnankotsu from './assets/bento_tonnankotsu.png';
 import bentoDaily from './assets/bento_daily.png';
+import tonnankotsuReal from './assets/tonnankotsu_real.png';
+import bentoReal1 from './assets/bento_real1.jpg';
+import bentoReal2 from './assets/bento_real2.jpg';
+import nishimeReal from './assets/nishime_real.jpg';
+import inariReal from './assets/inari_real.jpg';
+
 
 function App() {
   const [formData, setFormData] = useState({
@@ -105,6 +111,29 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* Dish Photo Gallery */}
+          <div style={{ marginTop: '56px' }}>
+            <h3 style={{ textAlign: 'center', fontSize: '1.4rem', marginBottom: '24px', color: 'var(--text-main)' }}>手作りお弁当・お惣菜の様子</h3>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+              <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                <img src={bentoReal1} alt="手作りお弁当" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '12px', textAlign: 'center', fontWeight: 'bold', fontSize: '0.9rem' }}>ボリューム満点 手作りお弁当</div>
+              </div>
+              <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                <img src={bentoReal2} alt="手作りおかずお弁当" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '12px', textAlign: 'center', fontWeight: 'bold', fontSize: '0.9rem' }}>ぎっしり詰まった人気おかず</div>
+              </div>
+              <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                <img src={nishimeReal} alt="自家製 煮しめ" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '12px', textAlign: 'center', fontWeight: 'bold', fontSize: '0.9rem' }}>味が染みた自家製 煮しめ</div>
+              </div>
+              <div style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                <img src={inariReal} alt="手作り いなり寿司" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '12px', textAlign: 'center', fontWeight: 'bold', fontSize: '0.9rem' }}>ほっとする美味しさ いなり寿司</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -150,45 +179,42 @@ function App() {
           <h2 className="section-title">豚軟骨の通販（全国発送）</h2>
           <p className="section-desc">当店名物のトロトロ豚軟骨を、遠方の方にもお届けいたします！</p>
 
-          <div className="vending-card" style={{ maxWidth: '800px', margin: '0 auto' }}>
-            <span className="vending-badge" style={{ backgroundColor: '#FFE6D6', color: '#D35400' }}>全国発送対応中！</span>
-            <h3>自慢の「豚軟骨」選べる4つの味</h3>
-            <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: '12px 0 16px' }}>
-              1パック（3個入り / 200g）：450円 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>(税込)</span>
-            </div>
-            <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>
-              じっくり煮込んだトロトロ豚軟骨をパックでお送りします。ご自宅用はもちろん、贈り物にも大好評です。
-            </p>
+          <div className="vending-card" style={{ maxWidth: '850px', margin: '0 auto', overflow: 'hidden' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', alignItems: 'center' }}>
+              <div style={{ borderRadius: '16px', overflow: 'hidden', boxShadow: '0 6px 18px rgba(0,0,0,0.06)' }}>
+                <img src={tonnankotsuReal} alt="特製 豚軟骨" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover' }} />
+              </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px', marginBottom: '32px' }}>
-              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
-                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🧄</span>
-                <strong style={{ display: 'block', color: 'var(--text-main)' }}>ニンニク醤油味</strong>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>スタミナ抜群！定番人気</span>
-              </div>
-              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
-                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🌶️</span>
-                <strong style={{ display: 'block', color: 'var(--text-main)' }}>キムチ味</strong>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>ピリ辛でご飯が進む</span>
-              </div>
-              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
-                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🍲</span>
-                <strong style={{ display: 'block', color: 'var(--text-main)' }}>だし醤油</strong>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>味わい深い上品なコク</span>
-              </div>
-              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
-                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🥣</span>
-                <strong style={{ display: 'block', color: 'var(--text-main)' }}>味噌味</strong>
-                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>濃厚で芳醇な旨味</span>
+              <div style={{ textAlign: 'left' }}>
+                <span className="vending-badge" style={{ backgroundColor: '#FFE6D6', color: '#D35400' }}>全国発送対応中！</span>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>名物「豚軟骨」選べる4つの味</h3>
+                <div style={{ fontSize: '1.25rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: '12px 0 16px' }}>
+                  1パック（3個入り / 200g）：450円 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>(税込)</span>
+                </div>
+                <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '20px' }}>
+                  時間をかけてじっくりトロトロになるまで煮込んだ当店自慢の極上豚軟骨。味がしっかり染み込み、ご飯やお酒の肴にも最高です。
+                </p>
+
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '24px' }}>
+                  <div style={{ background: 'white', padding: '10px 12px', borderRadius: '8px', border: '1px solid var(--color-border)', fontSize: '0.85rem' }}>
+                    🧄 <strong>ニンニク醤油味</strong>
+                  </div>
+                  <div style={{ background: 'white', padding: '10px 12px', borderRadius: '8px', border: '1px solid var(--color-border)', fontSize: '0.85rem' }}>
+                    🌶️ <strong>キムチ味</strong>
+                  </div>
+                  <div style={{ background: 'white', padding: '10px 12px', borderRadius: '8px', border: '1px solid var(--color-border)', fontSize: '0.85rem' }}>
+                    🍲 <strong>だし醤油</strong>
+                  </div>
+                  <div style={{ background: 'white', padding: '10px 12px', borderRadius: '8px', border: '1px solid var(--color-border)', fontSize: '0.85rem' }}>
+                    🥣 <strong>味噌味</strong>
+                  </div>
+                </div>
+
+                <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%' }}>
+                  📸 Instagram DMから注文・相談
+                </a>
               </div>
             </div>
-
-            <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
-              ご注文方法や送料に関する詳細は、Instagram DMまたはお電話にてお気軽にお問い合わせください。
-            </p>
-            <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              📸 Instagram DMから注文・相談
-            </a>
           </div>
         </div>
       </section>
