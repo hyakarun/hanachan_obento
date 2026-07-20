@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --font-base: 'Noto Sans JP', sans-serif;
+  --font-english: 'Outfit', sans-serif;
+
+  /* Color Palette - Warm & Natural */
+  --bg-primary: #FAF9F6; /* 温かみのあるオフホワイト */
+  --bg-secondary: #FFFDF9; /* 純白に近いアイボリー */
+  --text-main: #3C3530; /* 柔らかい焦げ茶色（温かみのある黒） */
+  --text-muted: #70635C; /* 薄い焦げ茶色 */
+  
+  --color-primary: #D07272; /* ロゴの「華」のピンク色 */
+  --color-primary-hover: #B55858;
+  
+  --color-accent: #7A8B7B; /* 無添加・手作り感を伝えるくすみグリーン */
+  --color-accent-hover: #5A6B5C;
+
+  --color-bg-card: #FFFFFF;
+  --color-border: #EFEAE4;
+
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
