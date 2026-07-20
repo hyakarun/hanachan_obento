@@ -185,6 +185,16 @@ nav a:hover {
   font-size: 0.95rem;
 }
 
+.sp-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sp-only {
+    display: inline;
+  }
+}
+
 /* About Grid */
 .about-grid {
   display: grid;

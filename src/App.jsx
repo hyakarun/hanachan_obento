@@ -89,7 +89,7 @@ function App() {
         <div className="container">
           <h2 className="section-title">お店のこだわり</h2>
           <p className="section-desc">
-            「お腹いっぱい食べて元気に！」をモットーに、<br />
+            「お腹いっぱい食べて元気に！」をモットーに、<br className="sp-only" />
             毎日心を込めて手作りしています。
           </p>
           
@@ -156,7 +156,7 @@ function App() {
         <div className="container">
           <h2 className="section-title">オードブル・大人数のお弁当</h2>
           <p className="section-desc">
-            ご予算やご用途に合わせて、<br />
+            ご予算やご用途に合わせて、<br className="sp-only" />
             ご希望の内容でお作りいたします。
           </p>
 
@@ -195,8 +195,8 @@ function App() {
         <div className="container">
           <h2 className="section-title">豚軟骨の通販（全国発送）</h2>
           <p className="section-desc">
-            当店名物のトロトロ豚軟骨を、<br />
-            <span className="nobreak">遠方の方にもお届けいたします！</span>
+            当店名物のトロトロ豚軟骨を、<br className="sp-only" />
+            遠方の方にもお届けいたします！
           </p>
 
           <div className="vending-card" style={{ maxWidth: '850px', margin: '0 auto', overflow: 'hidden' }}>
@@ -250,7 +250,7 @@ function App() {
         <div className="container vending">
           <h2 className="section-title">24時間いつでも買える自販機</h2>
           <p className="section-desc">
-            お店が開いていない時間でも、<br />
+            お店が開いていない時間でも、<br className="sp-only" />
             すぐにお召し上がりいただけます。
           </p>
           
@@ -325,7 +325,7 @@ function App() {
         <div className="container">
           <h2 className="section-title">公式 Instagram</h2>
           <p className="section-desc">
-            日々の手作りお弁当、限定メニュー、<br />
+            日々の手作りお弁当、限定メニュー、<br className="sp-only" />
             最新情報を毎日更新しています！
           </p>
 
