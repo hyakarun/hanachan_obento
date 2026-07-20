@@ -97,7 +97,6 @@ function App() {
             <div className="about-text">
               <h3>毎日食べても飽きない手作り惣菜</h3>
               <p>華ちゃんお弁当では、地元の新鮮な食材を使って、安心でほっとする味付けのおかずを毎日用意しています。</p>
-              <p>「とにかくお腹いっぱい食べて元気になってほしい！」という想いから、お弁当のフタが閉まらないくらい、おかずをぎゅっと詰め込んでお渡しします。</p>
             </div>
             <div className="about-features">
               <div className="feature-card">
