@@ -54,7 +54,7 @@ function App() {
               <li><a href="#online-shop" onClick={() => setMenuOpen(false)}>全国通販</a></li>
               <li><a href="#vending" onClick={() => setMenuOpen(false)}>自販機情報</a></li>
               <li><a href="#access" onClick={() => setMenuOpen(false)}>店舗情報</a></li>
-              <li><a href="#order" onClick={() => setMenuOpen(false)}>簡単予約</a></li>
+              {/* <li><a href="#order" onClick={() => setMenuOpen(false)}>簡単予約</a></li> */}
             </ul>
           </nav>
         </div>
@@ -75,9 +75,9 @@ function App() {
             <a href="tel:080-1711-3429" className="btn btn-primary">
               📞 お電話で注文する
             </a>
-            <a href="#order" className="btn btn-outline">
+            {/* <a href="#order" className="btn btn-outline">
               📅 Web予約（店頭受取）
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -303,9 +303,10 @@ function App() {
         </div>
       </section>
 
-      {/* Easy Order / Web Reservation Form */}
+      {/* Easy Order / Web Reservation Form (Hidden for now) */}
       <section id="order" className="section">
         <div className="container">
+          {/*
           <h2 className="section-title">店頭受取の簡単予約</h2>
           <p className="section-desc">Webから事前にお弁当をご予約いただけます。ご指定の時間に店頭でお待たせせずにお渡しいたします。</p>
 
@@ -413,8 +414,9 @@ function App() {
               </form>
             )}
           </div>
+          */}
 
-          <div className="contact-cta">
+          <div className="contact-cta" style={{ marginTop: 0 }}>
             <h3>お急ぎの場合はお電話ください</h3>
             <p style={{ color: 'var(--text-muted)' }}>
               日替わり弁当の取り置きや、当日のご注文はお電話にてスピーディに対応いたします。
