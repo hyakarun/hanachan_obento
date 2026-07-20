@@ -240,7 +240,10 @@ function App() {
       <section id="vending" className="section">
         <div className="container vending">
           <h2 className="section-title">24時間いつでも買える自販機</h2>
-          <p className="section-desc">お店が開いていない時間でも、すぐにお召し上がりいただけます。</p>
+          <p className="section-desc">
+            お店が開いていない時間でも、<br />
+            <span className="nobreak">すぐにお召し上がりいただけます。</span>
+          </p>
           
           <div className="vending-card">
             <span className="vending-badge" style={{ backgroundColor: '#FFF3CD', color: '#856404' }}>設置予定！（現在準備中）</span>
