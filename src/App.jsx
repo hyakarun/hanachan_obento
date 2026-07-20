@@ -208,8 +208,9 @@ function App() {
               <div style={{ textAlign: 'left' }}>
                 <span className="vending-badge" style={{ backgroundColor: '#FFE6D6', color: '#D35400' }}>全国発送対応中！</span>
                 <h3 style={{ fontSize: '1.4rem', marginBottom: '8px' }}>名物「豚軟骨」選べる4つの味</h3>
-                <div style={{ fontSize: '1.25rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: '12px 0 16px' }}>
-                  1パック（3個入り / 200g）：450円 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>(税込)</span>
+                <div style={{ fontSize: '1.1rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: '12px 0 16px', display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '4px 8px' }}>
+                  <span>1パック（3個入り / 200g）：</span>
+                  <span style={{ whiteSpace: 'nowrap' }}>450円 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 'normal' }}>(税込)</span></span>
                 </div>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '20px' }}>
                   時間をかけてじっくりトロトロになるまで煮込んだ当店自慢の極上豚軟骨。味がしっかり染み込み、ご飯やお酒の肴にも最高です。
