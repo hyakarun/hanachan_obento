@@ -115,9 +115,9 @@ function App() {
                 <p>毎日通っても楽しい、バラエティ豊かな献立をご用意。</p>
               </div>
               <div className="feature-card">
-                <div className="feature-icon">🪙</div>
-                <h4>安心の700円以下</h4>
-                <p>お財布に優しく、家計を応援する価格設定です。</p>
+                <div className="feature-icon">🏡</div>
+                <h4>地域密着</h4>
+                <p>地元の皆さまに愛される、親しみやすいお店です。</p>
               </div>
             </div>
           </div>
