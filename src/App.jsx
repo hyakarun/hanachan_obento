@@ -223,8 +223,9 @@ function App() {
                   </div>
                 </div>
 
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', fontWeight: '500' }}>
-                  💳 <strong>お支払い方法</strong>：現金 / 銀行振込 <span style={{ fontSize: '0.8rem', opacity: 0.8 }}>(クレジットカード・QRコード決済は準備中)</span>
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', fontWeight: '500', lineHeight: '1.6' }}>
+                  💳 <strong>お支払い方法</strong>：現金 / 銀行振込<br />
+                  <span style={{ fontSize: '0.8rem', opacity: 0.8 }} className="nobreak">(クレジットカード・QRコード決済は準備中)</span>
                 </p>
 
                 <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%' }}>
