@@ -11,6 +11,7 @@ import inariReal from './assets/inari_real.jpg';
 
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -39,14 +40,21 @@ function App() {
           <a href="#" className="logo-link">
             <img src={logo} alt="華ちゃんお弁当" className="logo-img" />
           </a>
-          <nav>
+          
+          <button className={`hamburger ${menuOpen ? 'active' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav className={menuOpen ? 'nav-active' : ''}>
             <ul>
-              <li><a href="#about">お店の紹介</a></li>
-              <li><a href="#hors-doeuvre">オードブル・大量注文</a></li>
-              <li><a href="#online-shop">全国通販</a></li>
-              <li><a href="#vending">自販機情報</a></li>
-              <li><a href="#access">店舗情報</a></li>
-              <li><a href="#order">簡単予約</a></li>
+              <li><a href="#about" onClick={() => setMenuOpen(false)}>お店の紹介</a></li>
+              <li><a href="#hors-doeuvre" onClick={() => setMenuOpen(false)}>オードブル・大量注文</a></li>
+              <li><a href="#online-shop" onClick={() => setMenuOpen(false)}>全国通販</a></li>
+              <li><a href="#vending" onClick={() => setMenuOpen(false)}>自販機情報</a></li>
+              <li><a href="#access" onClick={() => setMenuOpen(false)}>店舗情報</a></li>
+              <li><a href="#order" onClick={() => setMenuOpen(false)}>簡単予約</a></li>
             </ul>
           </nav>
         </div>
@@ -64,7 +72,7 @@ function App() {
             宮崎県都城市の「華ちゃんお弁当」です。名物のいなり寿司やトロトロ豚軟骨、ボリュームたっぷりのお弁当まで、お腹いっぱいになれる美味しい手作り料理をお届けしています。
           </p>
           <div className="cta-group">
-            <a href="tel:090-0000-0000" className="btn btn-primary">
+            <a href="tel:080-1711-3429" className="btn btn-primary">
               📞 お電話で注文する
             </a>
             <a href="#order" className="btn btn-outline">
@@ -207,6 +215,10 @@ function App() {
                     🥣 <strong>味噌味</strong>
                   </div>
                 </div>
+
+                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px', fontWeight: '500' }}>
+                  💳 <strong>お支払い方法</strong>：現金 / 銀行振込
+                </p>
 
                 <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%' }}>
                   📸 Instagram DMから注文・相談
@@ -404,8 +416,8 @@ function App() {
             <p style={{ color: 'var(--text-muted)' }}>
               日替わり弁当の取り置きや、当日のご注文はお電話にてスピーディに対応いたします。
             </p>
-            <a href="tel:090-0000-0000" className="contact-tel">
-              090-0000-0000
+            <a href="tel:080-1711-3429" className="contact-tel">
+              080-1711-3429
             </a>
             <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
               【受付時間】10:00 〜 完売まで
