@@ -54,6 +54,7 @@ function App() {
               <li><a href="#online-shop" onClick={() => setMenuOpen(false)}>全国通販</a></li>
               <li><a href="#vending" onClick={() => setMenuOpen(false)}>自販機情報</a></li>
               <li><a href="#access" onClick={() => setMenuOpen(false)}>店舗情報</a></li>
+              <li><a href="#instagram" onClick={() => setMenuOpen(false)}>Instagram</a></li>
               {/* <li><a href="#order" onClick={() => setMenuOpen(false)}>簡単予約</a></li> */}
             </ul>
           </nav>
@@ -299,6 +300,58 @@ function App() {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Instagram Feed Section */}
+      <section id="instagram" className="section">
+        <div className="container">
+          <h2 className="section-title">公式 Instagram</h2>
+          <p className="section-desc">
+            日々の手作りお弁当、限定メニュー、最新情報を毎日更新しています！
+          </p>
+
+          <div style={{ maxWidth: '900px', margin: '0 auto', background: 'var(--color-bg-card)', padding: '32px', borderRadius: '16px', border: '1px solid var(--color-border)', boxShadow: '0 4px 16px rgba(0,0,0,0.02)', textAlign: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginBottom: '24px' }}>
+              <span style={{ fontSize: '2rem' }}>📸</span>
+              <div style={{ textAlign: 'left' }}>
+                <h3 style={{ margin: 0, fontSize: '1.2rem', fontWeight: 'bold' }}>@mimimimichiyo</h3>
+                <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>華ちゃんお弁当 公式アカウント</span>
+              </div>
+            </div>
+
+            {/* Instagram Grid Layout */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+              <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', display: 'block', transition: 'transform 0.2s ease' }} className="menu-card">
+                <img src={tonnankotsuReal} alt="豚軟骨投稿" style={{ width: '100%', height: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ padding: '10px', fontSize: '0.85rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  🐷 名物 トロトロ豚軟骨
+                </div>
+              </a>
+              <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', display: 'block', transition: 'transform 0.2s ease' }} className="menu-card">
+                <img src={bentoReal1} alt="お弁当投稿" style={{ width: '100%', height: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ padding: '10px', fontSize: '0.85rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  🍱 ボリューム満点 手作りお弁当
+                </div>
+              </a>
+              <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', display: 'block', transition: 'transform 0.2s ease' }} className="menu-card">
+                <img src={inariReal} alt="いなり寿司投稿" style={{ width: '100%', height: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ padding: '10px', fontSize: '0.85rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  🦊 できたて手作り いなり寿司
+                </div>
+              </a>
+              <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--color-border)', display: 'block', transition: 'transform 0.2s ease' }} className="menu-card">
+                <img src={bentoReal2} alt="日替わりおかず投稿" style={{ width: '100%', height: '180px', objectFit: 'cover', display: 'block' }} />
+                <div style={{ padding: '10px', fontSize: '0.85rem', color: 'var(--text-muted)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                  ✨ 本日の手作りおかず
+                </div>
+              </a>
+            </div>
+
+            <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ padding: '12px 32px' }}>
+              📸 Instagramで最新投稿を見る・フォロー
+            </a>
           </div>
         </div>
       </section>
