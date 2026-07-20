@@ -198,7 +198,9 @@ function App() {
 
               <div style={{ textAlign: 'left' }}>
                 <span className="vending-badge" style={{ backgroundColor: '#FFE6D6', color: '#D35400' }}>全国発送対応中！</span>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '8px' }}>名物「豚軟骨」選べる4つの味</h3>
+                <h3 style={{ fontSize: '1.4rem', marginBottom: '8px' }}>
+                  <span className="nobreak">名物「豚軟骨」</span> <span className="nobreak">選べる4つの味</span>
+                </h3>
                 <div style={{ fontSize: '1.25rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: '12px 0 16px' }}>
                   1パック（3個入り / 200g）：450円 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>(税込)</span>
                 </div>
@@ -247,7 +249,7 @@ function App() {
               店休日や夜間・早朝でも、名物の「豚軟骨（パック）」をはじめ、手作りのお惣菜や冷たいお飲み物などをいつでも購入できる24時間自動販売機を設置予定です。稼働開始まで今しばらくお待ちください！
             </p>
             <p style={{ fontSize: '0.85rem', color: '#D35400', fontWeight: 'bold' }}>
-              ※稼働開始時期はInstagram等で随時お知らせいたします。
+              <span className="nobreak">※稼働開始時期は</span><span className="nobreak">Instagram等で</span><span className="nobreak">随時お知らせいたします。</span>
             </p>
           </div>
         </div>
@@ -257,7 +259,7 @@ function App() {
       <section id="access" className="section section-alt">
         <div className="container">
           <h2 className="section-title">アクセス・店舗情報</h2>
-          <p className="section-desc">都城市上川東の店舗へのお越しをお待ちしております。</p>
+          <p className="section-desc"><span className="nobreak">都城市上川東の店舗への</span><span className="nobreak">お越しをお待ちしております。</span></p>
 
           <div className="access-grid">
             <div className="access-info">
