@@ -152,7 +152,10 @@ function App() {
       <section id="hors-doeuvre" className="section">
         <div className="container">
           <h2 className="section-title"><span className="nobreak">オードブル・</span><span className="nobreak">大人数のお弁当</span></h2>
-          <p className="section-desc">ご予算やご用途に合わせて、ご希望の内容でお作りいたします。</p>
+          <p className="section-desc">
+            ご予算やご用途に合わせて、<br />
+            <span className="nobreak">ご希望の内容でお作りいたします。</span>
+          </p>
 
           <div className="about-grid">
             <div className="feature-card" style={{ padding: '32px' }}>
