@@ -315,7 +315,8 @@ function App() {
         <div className="container">
           <h2 className="section-title">公式 Instagram</h2>
           <p className="section-desc">
-            日々の手作りお弁当、限定メニュー、最新情報を毎日更新しています！
+            日々の手作りお弁当、限定メニュー、<br />
+            最新情報を毎日更新しています！
           </p>
 
           <div style={{ maxWidth: '900px', margin: '0 auto', background: 'var(--color-bg-card)', padding: '32px', borderRadius: '16px', border: '1px solid var(--color-border)', boxShadow: '0 4px 16px rgba(0,0,0,0.02)', textAlign: 'center' }}>
