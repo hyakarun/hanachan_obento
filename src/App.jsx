@@ -153,6 +153,9 @@ function App() {
           <div className="vending-card" style={{ maxWidth: '800px', margin: '0 auto' }}>
             <span className="vending-badge" style={{ backgroundColor: '#FFE6D6', color: '#D35400' }}>全国発送対応中！</span>
             <h3>自慢の「豚軟骨」選べる4つの味</h3>
+            <div style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'var(--color-primary)', margin: '12px 0 16px' }}>
+              1パック（3個入り / 200g）：450円 <span style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>(税込)</span>
+            </div>
             <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>
               じっくり煮込んだトロトロ豚軟骨をパックでお送りします。ご自宅用はもちろん、贈り物にも大好評です。
             </p>
