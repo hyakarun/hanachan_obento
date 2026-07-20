@@ -56,7 +56,6 @@ function App() {
       <section className="hero animate-fade-in">
         <div className="container hero-content">
           <img src={logo} alt="華ちゃんお弁当 ロゴ" className="hero-logo-large" />
-          <span className="badge">地域密着・手作りお弁当</span>
           <h1 className="hero-title">
             まごころ込めた手作りの味を、<br />
             ボリュームたっぷりお届け！
@@ -83,7 +82,7 @@ function App() {
           
           <div className="about-grid">
             <div className="about-text">
-              <h3>毎日食べても飽きない、お母さんの手作りおかず</h3>
+              <h3>毎日食べても飽きない手作りおかず</h3>
               <p>華ちゃんお弁当では、地元の新鮮な食材を使って、安心でほっとする味付けのおかずを毎日用意しています。</p>
               <p>「とにかくお腹いっぱい食べて元気になってほしい！」という想いから、お弁当のフタが閉まらないくらい、おかずをぎゅっと詰め込んでお渡しします。</p>
             </div>
