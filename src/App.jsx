@@ -269,7 +269,10 @@ function App() {
                   </tr>
                   <tr>
                     <th>営業時間</th>
-                    <td>10:00 〜 完売まで</td>
+                    <td>
+                      10:00 〜 完売まで<br />
+                      <span style={{ fontSize: '0.8rem', color: '#D35400', fontWeight: 'bold' }}>※当日のご予約はお電話にて 9:30 まで</span>
+                    </td>
                   </tr>
                   <tr>
                     <th>定休日</th>
@@ -419,8 +422,9 @@ function App() {
             <a href="tel:080-1711-3429" className="contact-tel">
               080-1711-3429
             </a>
-            <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-              【受付時間】10:00 〜 完売まで
+            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginTop: '8px', lineHeight: '1.6' }}>
+              【営業時間】10:00 〜 完売まで<br />
+              <span style={{ color: '#D35400', fontWeight: 'bold' }}>※当日のご予約はお電話にて 9:30 までにお願いいたします。</span>
             </p>
           </div>
         </div>
