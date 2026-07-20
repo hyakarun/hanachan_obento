@@ -500,8 +500,10 @@ footer p {
   }
 
   .hero-title {
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     line-height: 1.4;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .section-title {

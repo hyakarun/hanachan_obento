@@ -66,7 +66,7 @@ function App() {
         <div className="container hero-content">
           <img src={logo} alt="華ちゃんお弁当 ロゴ" className="hero-logo-large" />
           <h1 className="hero-title">
-            まごころ込めた手作りの味を、<br />
+            まごころ込めた手作りの味を<br />
             ボリュームたっぷりお届け！
           </h1>
           <p className="hero-desc">
