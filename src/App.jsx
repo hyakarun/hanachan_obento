@@ -36,7 +36,8 @@ function App() {
           <nav>
             <ul>
               <li><a href="#about">お店の紹介</a></li>
-              <li><a href="#menu">メニュー</a></li>
+              <li><a href="#hors-doeuvre">オードブル・大量注文</a></li>
+              <li><a href="#online-shop">全国通販</a></li>
               <li><a href="#vending">自販機情報</a></li>
               <li><a href="#access">店舗情報</a></li>
               <li><a href="#order">簡単予約</a></li>
@@ -107,40 +108,84 @@ function App() {
         </div>
       </section>
 
-      {/* Menu Section */}
-      <section id="menu" className="section section-alt">
+      {/* Hors d'oeuvre & Bulk Order Section */}
+      <section id="hors-doeuvre" className="section">
         <div className="container">
-          <h2 className="section-title">おすすめメニュー</h2>
-          <p className="section-desc">当店自慢の看板メニューと日替わりお弁当です。※価格はすべて税込です。</p>
+          <h2 className="section-title">オードブル・大人数のお弁当</h2>
+          <p className="section-desc">ご予算やご用途に合わせて、ご希望の内容でお作りいたします。</p>
 
-          <div className="menu-grid">
-            {/* Menu Item 1 */}
-            <div className="menu-card">
-              <div className="menu-img-placeholder" style={{ background: `url(${bentoTonnankotsu}) center/cover no-repeat` }}>
-                <span className="menu-tag">一番人気</span>
+          <div className="about-grid">
+            <div className="feature-card" style={{ padding: '32px' }}>
+              <div className="feature-icon" style={{ fontSize: '2rem' }}>🎉</div>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '12px' }}>特製オードブル</h3>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: '1.6', marginBottom: '16px' }}>
+                お子様用から大人用まで、集まりやイベントに合わせた華やかなオードブルをご用意いたします。
+              </p>
+              <ul style={{ textAlign: 'left', color: 'var(--text-muted)', fontSize: '0.9rem', paddingLeft: '20px', lineHeight: '1.8' }}>
+                <li>子供用・大人用のご要望に対応</li>
+                <li>お料理の内容・品数のご相談可能</li>
+                <li>ご予算に応じたお値段のご相談可能</li>
+              </ul>
+            </div>
+
+            <div className="feature-card" style={{ padding: '32px' }}>
+              <div className="feature-icon" style={{ fontSize: '2rem' }}>🍱</div>
+              <h3 style={{ fontSize: '1.4rem', marginBottom: '12px' }}>大人数のお弁当注文</h3>
+              <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: '1.6', marginBottom: '16px' }}>
+                スポーツ大会、会議、地域のお集まりなど、大口のご注文も承ります。
+              </p>
+              <ul style={{ textAlign: 'left', color: 'var(--text-muted)', fontSize: '0.9rem', paddingLeft: '20px', lineHeight: '1.8' }}>
+                <li>大人数分のお弁当も柔軟に対応</li>
+                <li>ご予算に応じた価格帯のご調整</li>
+                <li>ご希望のボリュームやおかず内容のご相談可能</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Online Shop Section */}
+      <section id="online-shop" className="section section-alt">
+        <div className="container">
+          <h2 className="section-title">豚軟骨の通販（全国発送）</h2>
+          <p className="section-desc">当店名物のトロトロ豚軟骨を、遠方の方にもお届けいたします！</p>
+
+          <div className="vending-card" style={{ maxWidth: '800px', margin: '0 auto' }}>
+            <span className="vending-badge" style={{ backgroundColor: '#FFE6D6', color: '#D35400' }}>全国発送対応中！</span>
+            <h3>自慢の「豚軟骨」選べる4つの味</h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>
+              じっくり煮込んだトロトロ豚軟骨をパックでお送りします。ご自宅用はもちろん、贈り物にも大好評です。
+            </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '16px', marginBottom: '32px' }}>
+              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
+                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🧄</span>
+                <strong style={{ display: 'block', color: 'var(--text-main)' }}>ニンニク醤油味</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>スタミナ抜群！定番人気</span>
               </div>
-              <div className="menu-info">
-                <div className="menu-header">
-                  <span className="menu-name">豚軟骨弁当</span>
-                  <span className="menu-price">¥650</span>
-                </div>
-                <p className="menu-desc">時間をかけてじっくりトロトロに煮込んだ豚軟骨は、味がしっかり染み込んでご飯が止まらない美味しさです。</p>
+              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
+                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🌶️</span>
+                <strong style={{ display: 'block', color: 'var(--text-main)' }}>キムチ味</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>ピリ辛でご飯が進む</span>
+              </div>
+              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
+                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🍲</span>
+                <strong style={{ display: 'block', color: 'var(--text-main)' }}>だし醤油</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>味わい深い上品なコク</span>
+              </div>
+              <div style={{ background: 'white', padding: '16px', borderRadius: '12px', border: '1px solid var(--color-border)', textAlign: 'center' }}>
+                <span style={{ fontSize: '1.5rem', display: 'block', marginBottom: '8px' }}>🥣</span>
+                <strong style={{ display: 'block', color: 'var(--text-main)' }}>味噌味</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>濃厚で芳醇な旨味</span>
               </div>
             </div>
 
-            {/* Menu Item 2 */}
-            <div className="menu-card">
-              <div className="menu-img-placeholder" style={{ background: `url(${bentoDaily}) center/cover no-repeat` }}>
-                <span className="menu-tag">日替わり</span>
-              </div>
-              <div className="menu-info">
-                <div className="menu-header">
-                  <span className="menu-name">日替わり弁当</span>
-                  <span className="menu-price">¥600</span>
-                </div>
-                <p className="menu-desc">唐揚げ、焼き魚、ハンバーグなど、日替わりで手作りおかずが変わる、毎日大人気のお得なお弁当です。</p>
-              </div>
-            </div>
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
+              ご注文方法や送料に関する詳細は、Instagram DMまたはお電話にてお気軽にお問い合わせください。
+            </p>
+            <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+              📸 Instagram DMから注文・相談
+            </a>
           </div>
         </div>
       </section>
@@ -198,7 +243,7 @@ function App() {
                 </tbody>
               </table>
               <div style={{ display: 'flex', gap: '12px' }}>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ flex: 1 }}>
+                <a href="https://www.instagram.com/mimimimichiyo?utm_source=qr" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ flex: 1 }}>
                   📸 Instagramを見る
                 </a>
               </div>
