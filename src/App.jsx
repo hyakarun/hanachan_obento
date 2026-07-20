@@ -66,11 +66,11 @@ function App() {
         <div className="container hero-content">
           <img src={logo} alt="華ちゃんお弁当 ロゴ" className="hero-logo-large" />
           <h1 className="hero-title">
-            まごころ込めた手作りの味を、<br />
-            ボリュームたっぷりお届け！
+            <span className="nobreak">まごころ込めた</span><span className="nobreak">手作りの味を、</span><br />
+            <span className="nobreak">ボリュームたっぷり</span><span className="nobreak">お届け！</span>
           </h1>
           <p className="hero-desc">
-            宮崎県都城市の「華ちゃんお弁当」です。名物のいなり寿司やトロトロ豚軟骨、ボリュームたっぷりのお弁当まで、お腹いっぱいになれる美味しい手作り料理をお届けしています。
+            <span className="nobreak">宮崎県都城市の</span><span className="nobreak">「華ちゃんお弁当」です。</span><span className="nobreak">名物のいなり寿司や</span><span className="nobreak">トロトロ豚軟骨、</span><span className="nobreak">ボリュームたっぷりの</span><span className="nobreak">お弁当まで、</span><span className="nobreak">お腹いっぱいになれる</span><span className="nobreak">手作り料理を</span><span className="nobreak">お届けしています。</span>
           </p>
           <div className="cta-group">
             <a href="tel:080-1711-3429" className="btn btn-primary">
@@ -87,13 +87,17 @@ function App() {
       <section id="about" className="section">
         <div className="container">
           <h2 className="section-title">お店のこだわり</h2>
-          <p className="section-desc">「お腹いっぱい食べて元気に！」をモットーに、毎日心を込めて手作りしています。</p>
+          <p className="section-desc"><span className="nobreak">「お腹いっぱい食べて元気に！」を</span><span className="nobreak">モットーに、</span><span className="nobreak">毎日心を込めて</span><span className="nobreak">手作りしています。</span></p>
           
           <div className="about-grid">
             <div className="about-text">
-              <h3>毎日食べても飽きない手作りおかず</h3>
-              <p>華ちゃんお弁当では、地元の新鮮な食材を使って、安心でほっとする味付けのおかずを毎日用意しています。</p>
-              <p>「とにかくお腹いっぱい食べて元気になってほしい！」という想いから、お弁当のフタが閉まらないくらい、おかずをぎゅっと詰め込んでお渡しします。</p>
+              <h3><span className="nobreak">毎日食べても飽きない</span> <span className="nobreak">手作りおかず</span></h3>
+              <p>
+                <span className="nobreak">華ちゃんお弁当では、</span><span className="nobreak">地元の新鮮な食材を使って、</span><span className="nobreak">安心でほっとする味付けの</span><span className="nobreak">おかずを毎日用意しています。</span>
+              </p>
+              <p>
+                <span className="nobreak">「とにかくお腹いっぱい食べて</span><span className="nobreak">元気になってほしい！」という想いから、</span><span className="nobreak">お弁当のフタが閉まらないくらい、</span><span className="nobreak">おかずをぎゅっと詰め込んで</span><span className="nobreak">お渡しします。</span>
+              </p>
             </div>
             <div className="about-features">
               <div className="feature-card">
@@ -103,7 +107,7 @@ function App() {
               </div>
               <div className="feature-card">
                 <div className="feature-icon">🐷</div>
-                <h4>宮崎名物「豚軟骨」</h4>
+                <h4><span className="nobreak">宮崎名物</span><span className="nobreak">「豚軟骨」</span></h4>
                 <p>じっくりトロトロになるまで煮込んだ極上の味わいです。</p>
               </div>
               <div className="feature-card">
@@ -147,7 +151,7 @@ function App() {
       {/* Hors d'oeuvre & Bulk Order Section */}
       <section id="hors-doeuvre" className="section">
         <div className="container">
-          <h2 className="section-title">オードブル・大人数のお弁当</h2>
+          <h2 className="section-title"><span className="nobreak">オードブル・</span><span className="nobreak">大人数のお弁当</span></h2>
           <p className="section-desc">ご予算やご用途に合わせて、ご希望の内容でお作りいたします。</p>
 
           <div className="about-grid">
