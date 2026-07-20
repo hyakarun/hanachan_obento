@@ -107,7 +107,7 @@ function App() {
               </div>
               <div className="feature-card">
                 <div className="feature-icon">🐷</div>
-                <h4><span className="nobreak">宮崎名物</span><span className="nobreak">「豚軟骨」</span></h4>
+                <h4><span style={{ whiteSpace: 'nowrap' }}>宮崎名物「豚軟骨」</span></h4>
                 <p>じっくりトロトロになるまで煮込んだ極上の味わいです。</p>
               </div>
               <div className="feature-card">
