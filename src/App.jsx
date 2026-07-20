@@ -237,13 +237,13 @@ function App() {
           <p className="section-desc">お店が開いていない時間でも、すぐにお召し上がりいただけます。</p>
           
           <div className="vending-card">
-            <span className="vending-badge">お店の前に設置中！</span>
-            <h3>お惣菜や飲み物も並んでいます</h3>
-            <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>
-              店休日や夜間・早朝でも、名物の「豚軟骨（パック）」をはじめ、手作りのお惣菜や冷たいお飲み物などを自動販売機で24時間いつでも販売しています。小腹が空いたときや、すぐにおかずが欲しいときにぜひご利用ください。
+            <span className="vending-badge" style={{ backgroundColor: '#FFF3CD', color: '#856404' }}>設置予定！（現在準備中）</span>
+            <h3>お店の前に24時間自販機を準備中です</h3>
+            <p style={{ color: 'var(--text-muted)', marginBottom: '24px', lineHeight: '1.7' }}>
+              店休日や夜間・早朝でも、名物の「豚軟骨（パック）」をはじめ、手作りのお惣菜や冷たいお飲み物などをいつでも購入できる24時間自動販売機を設置予定です。稼働開始まで今しばらくお待ちください！
             </p>
             <p style={{ fontSize: '0.85rem', color: '#D35400', fontWeight: 'bold' }}>
-              ※売り切れの際はご容赦ください。
+              ※稼働開始時期はInstagram等で随時お知らせいたします。
             </p>
           </div>
         </div>
@@ -277,7 +277,7 @@ function App() {
                   </tr>
                   <tr>
                     <th>定休日</th>
-                    <td>不定休（自販機は24時間稼働中）</td>
+                    <td>不定休（自販機は設置準備中）</td>
                   </tr>
                   <tr>
                     <th>お支払い</th>
