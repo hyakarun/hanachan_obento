@@ -280,7 +280,7 @@ function App() {
                   </tr>
                   <tr>
                     <th>お支払い</th>
-                    <td>現金 / PayPay（店頭のみ）</td>
+                    <td>現金</td>
                   </tr>
                 </tbody>
               </table>
