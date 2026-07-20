@@ -88,7 +88,10 @@ function App() {
       <section id="about" className="section">
         <div className="container">
           <h2 className="section-title">お店のこだわり</h2>
-          <p className="section-desc">「お腹いっぱい食べて元気に！」をモットーに、毎日心を込めて手作りしています。</p>
+          <p className="section-desc">
+            「お腹いっぱい食べて元気に！」をモットーに、<br />
+            毎日心を込めて手作りしています。
+          </p>
           
           <div className="about-grid">
             <div className="about-text">
