@@ -143,6 +143,10 @@ function App() {
                 <div style={{ padding: '12px', textAlign: 'center', fontWeight: 'bold', fontSize: '0.9rem' }}>ほっとする美味しさ いなり寿司</div>
               </div>
             </div>
+            <p style={{ textAlign: 'center', fontSize: '0.85rem', color: 'var(--text-muted)', marginTop: '16px' }}>
+              ※お弁当・お惣菜は日替わりのため、メニューは日によって異なります。<br />
+              看板メニューの「豚軟骨」は常時ご用意しております。
+            </p>
           </div>
         </div>
       </section>
@@ -266,8 +270,6 @@ function App() {
       <section id="access" className="section section-alt">
         <div className="container">
           <h2 className="section-title">アクセス・店舗情報</h2>
-          <p className="section-desc">都城市上川東の店舗へのお越しをお待ちしております。</p>
-
           <div className="access-grid">
             <div className="access-info">
               <h3>店舗詳細</h3>
