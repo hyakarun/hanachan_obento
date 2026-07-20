@@ -296,6 +296,10 @@ function App() {
                     <td>不定休（自販機は設置準備中）</td>
                   </tr>
                   <tr>
+                    <th>お受け取り</th>
+                    <td>店頭受取のみ</td>
+                  </tr>
+                  <tr>
                     <th>お支払い</th>
                     <td>現金</td>
                   </tr>
