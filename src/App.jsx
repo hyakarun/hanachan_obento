@@ -188,7 +188,10 @@ function App() {
       <section id="online-shop" className="section section-alt">
         <div className="container">
           <h2 className="section-title">豚軟骨の通販（全国発送）</h2>
-          <p className="section-desc">当店名物のトロトロ豚軟骨を、遠方の方にもお届けいたします！</p>
+          <p className="section-desc">
+            当店名物のトロトロ豚軟骨を、<br />
+            <span className="nobreak">遠方の方にもお届けいたします！</span>
+          </p>
 
           <div className="vending-card" style={{ maxWidth: '850px', margin: '0 auto', overflow: 'hidden' }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', alignItems: 'center' }}>
