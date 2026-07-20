@@ -293,7 +293,7 @@ function App() {
             <div className="map-container">
               <iframe
                 title="華ちゃんお弁当の地図"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.4682!2d131.0680!3d31.7300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353edd3f55de4d19%3A0xa6e6ff7e8c339794!2z44CSODg1LTAwMTIg666u5bSO55yM6YO95Z-O5biC5LiK5bed5p2x77yS5LiB55uu77yR77yW4oiS77yY!5e0!3m2!1sja!2sjp!4v1680000000000!5m2!1sja!2sjp"
+                src="https://maps.google.com/maps?q=%E5%AE%AE%E5%B4%8E%E7%9C%8C%E9%83%BD%E5%9F%8E%E5%B8%82%E4%B8%8A%E5%B7%9D%E6%9D%B12-16-8&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
