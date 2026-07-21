@@ -8,6 +8,7 @@ import bentoReal1 from './assets/bento_real1.jpg';
 import bentoReal2 from './assets/bento_real2.jpg';
 import nishimeReal from './assets/nishime_real.jpg';
 import inariReal from './assets/inari_real.jpg';
+import qrCode from './assets/qr_code.png';
 
 
 function App() {
@@ -319,6 +320,25 @@ function App() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+            </div>
+          </div>
+
+          {/* Official QR Code Card */}
+          <div style={{ marginTop: '48px', textAlign: 'center' }}>
+            <div style={{ maxWidth: '440px', margin: '0 auto', background: 'white', padding: '28px 20px', borderRadius: '16px', border: '2px dashed var(--color-primary)', boxShadow: '0 6px 18px rgba(0,0,0,0.04)' }}>
+              <div style={{ backgroundColor: '#FFE6D6', padding: '12px', borderRadius: '12px', marginBottom: '16px' }}>
+                <img src={logo} alt="華ちゃんお弁当 ロゴ" style={{ height: '54px', objectFit: 'contain' }} />
+              </div>
+              <h4 style={{ fontSize: '1.15rem', fontWeight: 'bold', color: 'var(--text-main)', margin: '0 0 6px' }}>公式ホームページ QRコード</h4>
+              <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', margin: '0 0 16px', lineHeight: '1.5' }}>
+                お弁当・お惣菜・名物「豚軟骨」の通販情報はこちら！
+              </p>
+              <div style={{ background: '#FFF9F5', padding: '14px', borderRadius: '12px', display: 'inline-block', border: '1px solid var(--color-border)' }}>
+                <img src={qrCode} alt="華ちゃんお弁当 公式QRコード" style={{ width: '190px', height: '190px', display: 'block' }} />
+              </div>
+              <div style={{ marginTop: '16px', fontSize: '0.9rem', fontWeight: 'bold', color: 'var(--color-primary)', wordBreak: 'break-all' }}>
+                https://hanachanobento.pages.dev/
+              </div>
             </div>
           </div>
         </div>
