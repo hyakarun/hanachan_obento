@@ -36,11 +36,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* Top Notice Bar */}
-      <div className="top-notice-bar">
-        ✨ 本日も10:00オープン！当日のご予約はお電話にて 9:30 まで承っております
-      </div>
-
       <header>
         <div className="container header-container">
           <a href="#" className="logo-link">
@@ -86,9 +81,6 @@ function App() {
             {/* <a href="#order" className="btn btn-outline">
               📅 Web予約（店頭受取）
             </a> */}
-          </div>
-          <div style={{ marginTop: '20px', background: '#FFF3EB', padding: '12px 18px', borderRadius: '12px', display: 'inline-block', border: '1px solid #FFD8C2', textAlign: 'left', fontSize: '0.85rem', color: 'var(--text-main)' }}>
-            💡 <strong>お電話注文のコツ</strong>： ①お名前 ②ご来店希望時間 ③ご注文内容 をお伝えいただくとスムーズです。
           </div>
         </div>
       </section>
