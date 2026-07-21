@@ -36,6 +36,11 @@ function App() {
 
   return (
     <div className="App">
+      {/* Top Notice Bar */}
+      <div className="top-notice-bar">
+        ✨ 本日も10:00オープン！当日のご予約はお電話にて 9:30 まで承っております
+      </div>
+
       <header>
         <div className="container header-container">
           <a href="#" className="logo-link">
@@ -81,6 +86,9 @@ function App() {
             {/* <a href="#order" className="btn btn-outline">
               📅 Web予約（店頭受取）
             </a> */}
+          </div>
+          <div style={{ marginTop: '20px', background: '#FFF3EB', padding: '12px 18px', borderRadius: '12px', display: 'inline-block', border: '1px solid #FFD8C2', textAlign: 'left', fontSize: '0.85rem', color: 'var(--text-main)' }}>
+            💡 <strong>お電話注文のコツ</strong>： ①お名前 ②ご来店希望時間 ③ご注文内容 をお伝えいただくとスムーズです。
           </div>
         </div>
       </section>
@@ -320,6 +328,15 @@ function App() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=%E5%AE%AE%E5%B4%8E%E7%9C%8C%E9%83%BD%E5%9F%8E%E5%B8%82%E4%B8%8A%E5%B7%9D%E6%9D%B12-16-8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+                style={{ width: '100%', marginTop: '12px', fontSize: '0.9rem', padding: '10px 16px' }}
+              >
+                🗺️ Googleマップで経路を見る
+              </a>
             </div>
           </div>
         </div>
@@ -512,6 +529,13 @@ function App() {
           <p>&copy; {new Date().getFullYear()} 華ちゃんお弁当. All Rights Reserved.</p>
         </div>
       </footer>
+
+      {/* Sticky Mobile Call Bar */}
+      <div className="sticky-call-bar">
+        <a href="tel:080-1711-3429" className="sticky-call-btn">
+          📞 お電話で注文する（080-1711-3429）
+        </a>
+      </div>
     </div>
   );
 }
